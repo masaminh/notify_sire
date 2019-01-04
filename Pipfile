@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pydocstyle = "*"
+pylint = "*"
+autopep8 = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+
+[packages]
+mojimoji = "*"
+injector = "*"
+beautifulsoup4 = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+test = "pytest --cov=. --cov-report=html"
+startconsole = "python notify_sire_children_entries.py -d 0000888832 0001050065"
